@@ -12,7 +12,7 @@ describe('Cadastro de Anúncio', () => {
     cy.submitAdForm()
 
     cy.url().should('include', '/sucesso')
-    cy.get('h3').contains('Anúncio Enviado com Suceço!').should('be.visible')
+    cy.get('h3').contains('Anúncio Enviado com Sucesso!').should('be.visible')
 
     cy.contains(
       'Obrigado por escolher o BikeBoard para anunciar sua bicicleta',
